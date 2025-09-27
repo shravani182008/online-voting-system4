@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vote - Online Voting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+<h1>ONLINE VOTING</h1>
+<p class="tagline">Make your voice count — Safe & Transparent</p>
+<nav class="mainnav">
+  <a href="index.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="vote.html">Vote Now</a>
+  <a href="results.html">Results</a>
+  <a href="#" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<main class="container">
+<h2 class="section-title">Cast Your Vote</h2>
+<div class="candidate-grid">
+  <div class="candidate-card">
+    <img src="https://i.pinimg.com/474x/8e/b3/38/8eb338b3ad4791289d56318188f1fcf1.jpg" alt="BJP">
+    <h3>BJP</h3>
+    <div class="vote-option"><input type="radio" name="candidate" value="BJP"> Select</div>
+  </div>
+  <div class="candidate-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Indian_National_Congress_hand_logo.svg/2048px-         Indian_National_Congress_hand_logo.svg.png" alt="Congress">
+    <h3>Congress</h3>
+    <div class="vote-option"><input type="radio" name="candidate" value="Congress"> Select</div>
+  </div>
+  <div class="candidate-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qrUZPHox4SDwkfH9pESxLkUTbjXrQgm8nA&s" alt="Shiv Sena">
+    <h3>Shiv Sena</h3>
+    <div class="vote-option"><input type="radio" name="candidate" value="Shiv Sena"> Select</div>
+  </div>
+  <div class="candidate-card">
+    <img src="https://goemkarponn.com/wp-content/uploads/2021/10/Trinamool_Congress_flag1.png" alt="AITC">
+    <h3>AITC</h3>
+    <div class="vote-option"><input type="radio" name="candidate" value="AITC"> Select</div>
+  </div>
+  <div class="candidate-card">
+    <img src="https://www.vhv.rs/dpng/d/6-64876_nationalist-congress-party-logo-hd-png-download.png" alt="NCP">
+    <h3>NCP</h3>
+    <div class="vote-option"><input type="radio" name="candidate" value="INC"> Select</div>
+  </div>
+</div>
+<div class="action-bar">
+  <button class="btn" id="castBtn">Cast Vote</button>
+</div>
+<p id="voteNotice"></p>
+</main>
+
+<footer>&copy; 2025 Online Voting System — All Rights Reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>

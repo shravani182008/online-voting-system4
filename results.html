@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Results - Online Voting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+<h1>ONLINE VOTING</h1>
+<p class="tagline">Make your voice count — Safe & Transparent</p>
+<nav class="mainnav">
+  <a href="index.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="vote.html">Vote Now</a>
+  <a href="results.html">Results</a>
+  <a href="#" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<main class="container">
+<h2 class="section-title">Election Results</h2>
+<table class="results-table">
+<tr><th>Party</th><th>Votes</th></tr>
+<tr><td>BJP</td><td id="count-bjp">0</td></tr>
+<tr><td>Congress</td><td id="count-congress">0</td></tr>
+<tr><td>Shiv Sena</td><td id="count-shiv">0</td></tr>
+<tr><td>AITC</td><td id="count-aitc">0</td></tr>
+<tr><td>INC</td><td id="count-inc">0</td></tr>
+</table>
+</main>
+
+<footer>&copy; 2025 Online Voting System — All Rights Reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>
